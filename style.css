@@ -1,0 +1,586 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  ::selection{
+    color: #000;
+    background-color: #e5f1fa;
+  }
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+#top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#top-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin-left: 10px;
+}
+#top-nav a i {
+    padding-right: 8px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+ul li {
+  list-style: none;
+  margin: 0 auto;
+  border-left: 2px solid #3ca0e7;
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-family: arvo;
+}
+
+li a {
+  color: black;
+}
+
+li a:hover {
+  color: #3ca0e7;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background: white;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+}
+
+ul li ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid #3ca0e7;
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: #3ca0e7;
+  }
+}
+
+ul li ul li a {
+  transition: all 0.5s ease;
+}
+
+
+/* sub menu css */
+/* Existing CSS for the main menu and submenus */
+
+/* ... (Existing CSS code) ... */
+
+/* New CSS for the sub-submenu */
+
+/* Existing CSS for the main menu and submenus */
+
+/* ... (Existing CSS code) ... */
+
+/* New CSS for the sub-submenu */
+ul li ul ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 100%; /* Position the sub-submenu to the right of the parent submenu */
+  top: 0;
+  display: none;
+  background: white;
+  z-index: 99;
+}
+
+ul li ul:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 0;
+  padding-left: 20px; /* Adjust the indentation as needed */
+  box-shadow: 0px 3px 5px -1px #ccc;
+  z-index: 1000;
+}
+
+ul li ul ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px; /* Adjust the spacing as needed */
+  border-style: none;
+}
+
+ul li ul ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid #3ca0e7;
+  transition: all 0.3s ease;
+}
+
+
+/* sub menu css */
+
+
+
+
+#image-slider {
+  margin: 2vw 0vw;
+  width: 100%;
+  height: 80vh;
+  animation: slide 13s infinite ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#image-slider h2{
+  position: relative; 
+  /* background-color: #bde1fc; */
+  padding: 1vw;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 6vw;
+  color: transparent;
+ -webkit-text-stroke:2px #000; 
+}
+
+@keyframes slide {
+  0%{
+    background-image: url("assets/scroll/11.jpg");
+    object-fit: cover;
+    object-position: center;
+  }
+  10%{
+    background-image: url("assets/scroll/3.jpg");
+    object-fit: cover;
+    object-position: center;
+  }
+  20%{
+    background-image: url("assets/scroll/4.jpg");
+    object-fit: cover;
+    object-position: center;
+  }
+  30%{
+    background-image: url("assets/scroll/5.jpg");
+    object-fit: cover;
+    object-position: center;
+  }
+  40%{
+    background-image: url("assets/scroll/6.jpg");
+    object-fit: cover;
+    object-position: center;
+  }
+  50%{
+    background-image: url("assets/scroll/7.jpg");
+    object-fit: cover;
+    object-position: center;
+  }
+  60%{
+    background-image: url("assets/scroll/8.jpg");
+    object-fit: cover;
+    object-position: center;
+  }
+  70%{
+    background-image: url("assets/scroll/9.jpg");
+    object-fit: cover;
+    object-position: center;
+  }
+  80%{
+    background-image: url("assets/scroll/10.jpg");
+    object-fit: cover;
+    object-position: center;
+  }
+  90%{
+    background-image: url("assets/scroll/12.jpg");
+    object-fit: cover;
+    object-position: center;
+  }
+  100%{
+    background-image: url("assets/scroll/3.jpg");
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+
+#card {
+  margin-top: 2vw;
+  display: flex;
+  opacity: 0.7;
+}
+
+
+
+#card img{
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 10px;
+  
+}
+
+#card p{
+  width: 300px;
+  text-align: center;
+}
+
+.card1 {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#about {
+  padding: 5vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#about-heading{
+  padding: 5vw;
+  
+}
+#about-heading h2{
+  text-align: center;
+}
+#about-left{
+  width: 30%;
+  height: 400px;
+  padding: 3vw;
+  background-color: #f5f7f6;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+#about-left:hover {
+  transform: translateY(-15px);
+}
+#about-left p{
+  width: 70%;
+  margin-top: 50px;
+  
+}
+
+#about-center{
+  background-color: #e5f1fa;
+  width: 30%;
+  height: 400px;
+  padding: 3vw;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+#about-center span{
+  font-size: 25px;
+  color: #3ca0e7;
+  margin: 10px 0px;
+}
+#about-center:hover {
+  transform: translateY(-15px);
+} 
+#about-right{
+  width: 30%;
+  height: 400px;
+  transition: all 0.3s ease;
+}
+#about-right:hover {
+  transform: translateY(-15px);
+}
+
+#manuf-heading {
+  padding: 5vw;
+  text-align: center;
+}
+#manuf-heading h3{
+  font-size: 1.3vw;
+}
+#manuf{
+  width: 100%;
+  height: 750px;
+  display: flex;
+}
+#manuf1 {
+  height: 100%;
+  width: 25%;
+  background-image: url("assets/Ceiling\ Work.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all 1s ease-in-out;
+  opacity: 0.7;
+}
+#manuf1 h3{
+  font-size: 1.4vw;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  background-color: #e5f1fa;
+  width: fit-content;
+  padding: 10px;
+
+}
+#manuf1:hover{
+  transform: scale(0.9);
+  border-radius: 10px;
+  opacity: 1;
+  
+}
+#manuf2 {
+  height: 100%;
+  width: 25%;
+  background-image: url("assets/duct\ work.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all 1s ease-in-out;
+  opacity: 0.7;
+}
+#manuf2 h3{
+  font-size: 1.4vw;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  background-color: #e5f1fa;
+  width: fit-content;
+  padding: 10px;
+  
+}
+#manuf2:hover{
+  transform: scale(0.9);
+  border-radius: 10px;
+  opacity: 1;
+}
+#manuf3 {
+  height: 100%;
+  width: 25%;
+  background-image: url("assets/Electrical\ Designing\ &\ Consultancy.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all 1s ease-in-out;
+  opacity: 0.7;
+}
+#manuf3 h3{
+  font-size: 1.4vw;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  background-color: #e5f1fa;
+  width: fit-content;
+  padding: 10px;
+  
+}
+#manuf3:hover{
+  transform: scale(0.9);
+  border-radius: 10px;
+  opacity: 1;
+}
+#manuf4 {
+  height: 100%;
+  width: 25%;
+  background-image: url("assets/layout\ designing.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all 1s ease-in-out;
+  opacity: 0.7;
+}
+#manuf4 h3{
+  font-size: 1.4vw;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  background-color: #e5f1fa;
+  width: fit-content;
+  padding: 10px;
+  
+}
+#manuf4:hover{
+  transform: scale(0.9);
+  border-radius: 10px;
+  opacity: 1;
+}
+
+#partner .img{
+  display: inline-block;
+}
+#partner .img img{
+  height: 150px;
+}
+#partner-heading h3{
+  padding: 5vw;
+  text-align: center;
+  font-size: 1.3vw;
+  border-bottom: 1px solid black;
+}
+
+
+#feature-heading h3{
+  text-align: center;
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+  font-size: 1.3vw;
+}
+#feature-heading p{
+  text-align: center;
+  padding-bottom: 2vw;
+}
+
+#features {
+  width: 100%;
+  padding: 5vw 13vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.feature1 {
+  width: 30%;
+  height: 250px;
+  background-color: #eef1f1;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.feature1 p{
+  padding: 2vw;
+}
+.feature1 span {
+  margin-top: 25px;
+  color: #84caff;
+  font-size: 3vw;
+}
+
+.feature1:hover {
+  background-color: #e5f1fa;
+  transform: scale(1.1);
+}
+
+
+#hire {
+  width: 70%;
+  margin-left: 15vw;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5f1fa;
+  border-radius: 8px;
+}
+#hire-text h3{
+  padding-left: 2vw;
+}
+#hire-text p{
+  padding-top: 2vw;
+  padding-left: 2vw;
+  width: 50%;
+}
+#hire-buton {
+  margin-right: 4vw;
+  transition: all 0.5s ease-in-out;
+}
+#hire-buton a{
+  text-decoration: none;
+  color: black;
+  background-color: #ccc;
+  padding: 0.7vw;
+  border-radius: 5px;
+  font-weight: 600;
+}
+#hire-buton:hover{
+  transform: translateY(-10px);
+}
+
+#contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3vw;
+  background-color: #eef1f1;
+  padding: 2vw;
+}
+#contact1 {
+  padding: 2vw 5vw;
+}
+#contact1 p{
+  width: 500px;
+}
+#contact1 i{
+  padding-top: 1.5vw;
+  font-size: 25px;
+  margin-right: 1vw;
+  color: #3ca0e7;
+  border-bottom: 1px solid black;
+  padding: 8px;
+  transition: all 0.3s ease-in-out;
+}
+#contact1 i:hover{
+  transform: translateY(8px);
+}
+
+#contact2 ol li{
+  list-style-type: none;
+  padding-top: 0.5vw;
+  border-bottom: 1px solid black;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+#contact2 ol li:hover{
+  transform: translateX(8px);
+}
+
+#contact3 i{
+  color: #3ca0e7;
+  font-size: 25px;
+  border-bottom: 1px solid black;
+  padding-top: 0.5vw;
+  padding-bottom: 0.2vw;
+  transition: all 0.3s ease-in-out;
+}
+#contact3 i:hover{
+  transform: translateY(-8px);
+}
+#contact3 a {
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}

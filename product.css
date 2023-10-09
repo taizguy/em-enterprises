@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+#main-text {
+    margin-top: 2vw;
+    width: 100%;
+    background-color: #e5f1fa;
+    padding: 3vw;
+}
+#main-text h1 {
+    font-size: 3vw;
+    font-weight: 600;
+    text-align: center;
+}
+#main-text p{
+    text-align: center;
+    padding: 0 9vw;
+}
+
+#content {
+    width: 100%;
+    padding: 3vw 5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#content #left{
+    width: 45%;
+    display: flex;
+}
+#content #left #left-left {
+    width: 50%;
+    border: 1px solid rgb(167, 167, 167);
+    transition: all 0.3s ease-in-out;
+}
+#content #left #left-left:hover {
+    background-color: #e5f1fa;
+}
+#left-left img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease-in-out;
+}
+#left-left img:hover{
+    transform: scale(0.9);
+}
+#content #left #left-right {
+    width: 50%;
+    padding: 2.5vw;
+    border: 1px solid rgb(167, 167, 167);
+    transition: all 0.3s ease-in-out;
+}
+#content #left #left-right:hover{
+    transform: translateY(-10px);
+    background-color: #e5f1fa;
+}
+#left-right h3 {
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+
+
+
+#content #right{
+    width: 45%;
+    display: flex;
+}
+#content #right #right-left {
+    width: 50%;
+    border: 1px solid rgb(167, 167, 167);
+    border: 1px solid rgb(167, 167, 167);
+    transition: all 0.3s ease-in-out;
+}
+#content #right #right-left:hover {
+    background-color: #e5f1fa;
+}
+#right-left img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease-in-out;
+}
+#right-left img:hover{
+    transform: scale(0.9);
+}
+#content #right #right-right {
+    width: 50%;
+    padding: 2.5vw;
+    border: 1px solid rgb(167, 167, 167);
+    transition: all 0.3s ease-in-out;
+}
+#content #right #right-right:hover {
+    transform: translateY(-10px);
+    background-color: #e5f1fa;
+}
+#right-right h3 {
+    font-size: 1vw;
+    font-weight: 700;
+}
