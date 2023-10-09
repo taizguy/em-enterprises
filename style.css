@@ -586,3 +586,45 @@ ul li ul ul li a:hover {
   color: #000;
   transition: all 0.3s ease-in-out;
 }
+
+#team{
+    margin-top: 7vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+#team #right {
+  width: 45%;
+}
+
+#team #right h2{
+  color: #3ca0e7;
+  font-size: 2.5vw;
+  font-weight: 700;
+}
+#team #right h4{
+  color: #FC535B;
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+#team #right p{
+  font-size: 1.1vw;
+  font-weight: 400;
+}
+
+#team #left {
+  /* width: 45%; */
+}
+#team #left img{
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+#team #left img:hover{
+  transform: translateY(-10px);
+}
+
+mark {
+  background-color: #fff;
+  border-bottom: 4px solid #FC535B;
+}
