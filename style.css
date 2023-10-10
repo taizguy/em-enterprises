@@ -81,6 +81,7 @@ ul li ul:hover {
   text-align: left;
   padding-top: 20px;
   box-shadow: 0px 3px 5px -1px #ccc;
+  z-index: 10000;
 }
 
 ul li ul li {
@@ -95,6 +96,7 @@ ul li ul li a:hover {
   padding-left: 10px;
   border-left: 2px solid #3ca0e7;
   transition: all 0.3s ease;
+ 
 }
 
 a {
@@ -628,3 +630,4 @@ mark {
   background-color: #fff;
   border-bottom: 4px solid #FC535B;
 }
+
