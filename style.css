@@ -526,13 +526,13 @@ ul li ul ul li a:hover {
 #hire-buton a{
   text-decoration: none;
   color: black;
-  background-color: #ccc;
+  background-color: #FC535B;
   padding: 0.7vw;
   border-radius: 5px;
   font-weight: 600;
 }
 #hire-buton:hover{
-  transform: translateY(-10px);
+  transform: translateY(10px);
 }
 
 #contact {
@@ -589,42 +589,7 @@ ul li ul ul li a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-#team{
-    margin-top: 7vw;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-   
-}
-#team #right {
-  width: 45%;
-}
 
-#team #right h2{
-  color: #3ca0e7;
-  font-size: 2.5vw;
-  font-weight: 700;
-}
-#team #right h4{
-  color: #FC535B;
-  font-size: 1.2vw;
-  font-weight: 600;
-}
-#team #right p{
-  font-size: 1.1vw;
-  font-weight: 400;
-}
-
-#team #left {
-  /* width: 45%; */
-}
-#team #left img{
-  width: 100%;
-  transition: all 0.3s ease-in-out;
-}
-#team #left img:hover{
-  transform: translateY(-10px);
-}
 
 mark {
   background-color: #fff;
